@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree RK Studio - Frames, Prints & More</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Shree RK Studio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Frame Your World</h1>
+            <p>Premium frames, art prints, and studio services crafted with care.</p>
+            <button onclick="scrollToSection('products')">Explore Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x400" alt="Wood Frame">
+                <h3>Classic Wood Frame</h3>
+                <p>₹500 - 12x16 inch</p>
+                <button onclick="addToCart('Classic Wood Frame', 500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x400" alt="Art Print">
+                <h3>Studio Art Print</h3>
+                <p>₹300 - Matte Finish</p>
+                <button onclick="addToCart('Studio Art Print', 300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x400" alt="Passport Photo">
+                <h3>Passport Photo Set</h3>
+                <p>₹50 - Instant Delivery</p>
+                <button onclick="addToCart('Passport Photo Set', 50)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <div id="review-container" class="review-grid"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@shreerkstudio.com</p>
+        <p>Phone: +91 123-456-7890</p>
+        <p>Location: Hyderabad, India</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Shree RK Studio. Crafted with Precision.</p>
+    </footer>
+
+    <!-- Google Maps API with YOUR API Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo8AZJYyh66w06mCeMlohXUxwmt8raOSo&libraries=places"></script>
+    <script src="script.js"></script>
+</body>
+</html>
